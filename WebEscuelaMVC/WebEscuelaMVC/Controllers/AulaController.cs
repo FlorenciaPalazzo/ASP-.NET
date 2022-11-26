@@ -95,7 +95,7 @@ namespace WebEscuelaMVC.Controllers
         //***BUSCA AULA POR NUMERO***
         public ActionResult TraerPorNumero(int num)
         {    
-            Aula aulaNum = (from a in context.Aulas where num == a.Numero select a).ToList();
+            Aula aulaNum = (from a in context.Aulas where num == a.Numero select a).FirstOrDefault();
             return View("Detail", aulaNum);
         }
 
