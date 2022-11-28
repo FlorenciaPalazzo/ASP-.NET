@@ -19,6 +19,7 @@ namespace OperasWebSite.Controllers
             List<Opera>lista = context.Operas.ToList(); 
             return View("Index",lista);
         }
+
         //GET: Opera/Create
         public  ActionResult Create()
         {
@@ -54,6 +55,34 @@ namespace OperasWebSite.Controllers
                 return View(opera);
             }
         }
+        //GET:/Opera/Delete/id
+        [HttpGet]
+        public ActionResult Delete( int id)
+        {
+            Opera opera= context.Operas.Find(id);
+            if (opera== null)
+            {
+                return HttpNotFound();
+            }
+            return View("Delete", opera);
+        }
+
+        // POST: /Opera/Delete
+        [HttpPost]
+        [ActionName("Delete")]
+        public ActionResult DeleteConfirmed(int id)
+        {
+            Opera opera = context.Operas.Find(id);
+            if (opera != null)
+            {
+                context.Operas.Remove(opera);
+                context.SaveChanges();
+            }
+
+            return RedirectToAction("Index");
+
+        }
+
 
 
     }
