@@ -126,6 +126,8 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Content Include="Views\Photo\Index.cshtml" />
+    <Content Include="Views\Photo\Display.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -135,7 +137,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Photo\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202211251858125_createDataBase.resx">

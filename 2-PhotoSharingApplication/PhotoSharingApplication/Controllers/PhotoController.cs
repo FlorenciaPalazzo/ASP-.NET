@@ -1,28 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using PhotoSharingApplication.Data;
+using PhotoSharingApplication.Models;
+using System;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using System.Globalization;
-using PhotoSharingApplication.Models;
-using PhotoSharingApplication.Data;
 
 namespace PhotoSharingApplication.Controllers
 {
     public class PhotoController : Controller
     {
-        private PhotoDBContext context =new PhotoDBContext();
+        private PhotoDBContext context = new PhotoDBContext();
 
         // GET: Photo
         public ActionResult Index()
         {
-            return View("Index",context.Photos.ToList());
+            return View("Index", context.Photos.ToList());
 
         }
         //GET: Photo/Display
         public ActionResult Display(int id)
         {
-            Photo photo =context.Photos.Find(id);
+            Photo photo = context.Photos.Find(id);
             if (photo == null)
             {
                 return HttpNotFound();
@@ -71,7 +69,7 @@ namespace PhotoSharingApplication.Controllers
         //GET:Photo/Delete/id
         public ActionResult Delete(int id)
         {
-            Photo photo =context.Photos.Find(id);
+            Photo photo = context.Photos.Find(id);
             if (photo == null)
             {
                 return HttpNotFound();
@@ -85,7 +83,7 @@ namespace PhotoSharingApplication.Controllers
         [ActionName("Delete")]
         public ActionResult DeleteConfirmed(int id)
         {
-            Photo photo =context.Photos.Find(id);
+            Photo photo = context.Photos.Find(id);
             context.Photos.Remove(photo);
             context.SaveChanges();
             return RedirectToAction("Index");
