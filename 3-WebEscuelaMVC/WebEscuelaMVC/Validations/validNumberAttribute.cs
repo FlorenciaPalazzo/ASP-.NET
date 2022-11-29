@@ -19,7 +19,9 @@ namespace WebEscuelaMVC.Validations
             {
                 return false;
             }
+            else { 
                 return true;
+            }
         }
     }
 }

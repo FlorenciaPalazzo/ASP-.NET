@@ -41,7 +41,7 @@ namespace WebEscuelaMVC.Controllers
                 context.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View("Create");
+            return View("Register",aula);
 
         }
 
@@ -56,6 +56,31 @@ namespace WebEscuelaMVC.Controllers
             }
             return View("Detail", aula);
 
+        }
+
+        //***ELIMINA UN AULA***
+        //GET
+        public ActionResult Delete(int id)
+        {
+            Aula aula = context.Aulas.Find(id);
+            if (aula== null)
+            {
+                return HttpNotFound();
+            }
+            return View("Delete", aula);
+        }
+        [HttpPost]
+        //POST
+        [ActionName("Delete")]
+        public ActionResult DeleteConfirmed(int id)
+        {
+            Aula aula = context.Aulas.Find(id);
+            if (aula != null)
+            {
+                context.Aulas.Remove(aula);
+                context.SaveChanges();
+            }
+            return RedirectToAction("Index");
         }
 
         //***EDITA UN AULA***
@@ -74,13 +99,19 @@ namespace WebEscuelaMVC.Controllers
         }
         //POST : Aula/Edit/id
         [HttpPost]
-        public ActionResult EditConfirmed(int id)
+        
+        public ActionResult Edit(Aula aula)
         {
-            Aula aula = context.Aulas.Find(id);
+
+            if (ModelState.IsValid)
+            {
 
             context.Entry(aula).State = EntityState.Modified;
             context.SaveChanges();
-            return View("Modificar", aula);
+            return RedirectToAction("Index");
+            }
+
+            return View(aula);
 
         }
 
