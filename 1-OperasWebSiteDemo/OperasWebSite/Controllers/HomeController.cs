@@ -16,22 +16,13 @@ namespace OperasWebSite.Controllers
         {
             return View();
         }
+        public ActionResult About()
+        {
 
-        ////filtros de accion
-        ////Despues de invocar la accion
-        //protected override void OnActionExecuting(ActionExecutingContext filterContext)
-        //{
-        //    //base.OnActionExecuting(filterContext);
-        //    Debug.WriteLine("Antes de invocar la accion-OnActionExecuting");
-        //}
+            ViewBag.Message = "Contenido en  view About";
+            return View();
+        }
 
-        ////Despues de invocar la accion
-        //protected override void OnActionExecuted(ActionExecutedContext filterContext)
-        //{
-        //    //base.OnActionExecuted(filterContext);
-        //    Debug.WriteLine("Despues de invocar la accion-OnActionExecuted");
-
-        //}
     }
 
 
