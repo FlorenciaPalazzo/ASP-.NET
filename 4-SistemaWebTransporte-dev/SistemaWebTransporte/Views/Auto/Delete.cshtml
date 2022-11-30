@@ -1,0 +1,29 @@
+﻿@model SistemaWebTransporte.Models.Auto
+@{
+    ViewBag.Title = "Eliminar";
+}
+
+<h2>Delete</h2>
+<h2>@Model.Modelo - @Model.Marca</h2>
+<p>Desea eliminar este auto?</p>
+
+@using (Html.BeginForm("Delete", "Auto", FormMethod.Post))
+{
+    <div>
+        <spam>@Html.DisplayNameFor(model => model.Marca)</spam>
+        <spam>@Html.DisplayFor(model => model.Marca)</spam>
+        <spam>@Html.DisplayNameFor(model => model.Modelo)</spam>
+        <spam>@Html.DisplayFor(model => model.Modelo)</spam>
+        <spam>@Html.DisplayNameFor(model => model.Color)</spam>
+        <spam>@Html.DisplayFor(model => model.Color)</spam>
+        <spam>@Html.DisplayNameFor(model => model.Anio)</spam>
+        <spam>@Html.DisplayFor(model => model.Anio)</spam>
+    </div>
+
+    <input type="submit" value="Eliminar" />
+
+}
+
+<p>
+    @Html.ActionLink("Volver a index", "Index", "Auto")
+</p>

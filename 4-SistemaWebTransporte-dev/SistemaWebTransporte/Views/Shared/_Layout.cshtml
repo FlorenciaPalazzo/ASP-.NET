@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/main.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="conteiner">
+        <div id="header">
+            <h2>Header</h2>
+        </div>
+        <div id="ads">
+            <h2>Ads</h2>
+        </div>
+    </div>
+
+    <div id="conteinernav">
+        <div id="nav">
+            @if (IsSectionDefined("Nav"))
+            {
+                @RenderSection("Nav")
+            }
+            @*else
+            {
+                <h2>Nav</h2>
+            }*@
+        </div>
+
+        <div id="conteiner2">
+            <div id="article">
+                <h2>Article</h2>
+                <div>
+                    @RenderBody()
+                </div>
+            </div>
+           
+
+            <div id="footer">
+                <h2>Footer</h2>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

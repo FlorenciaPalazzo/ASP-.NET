@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<div>
+    <h3>@ViewBag.Fecha</h3>
+    <p>
+        @Html.ActionLink("Go to Autos", "Index", "Auto")
+    </p>
+</div>
+
+<h2>
+    Bienvenidos al sitio web!
+</h2>
+
+@section Nav{
+    <p>Otro menu</p>
+    <ul>
+        <li><a href="#link1">Link1</a></li>
+        <li><a href="#link2">Link2</a></li>
+        <li><a href="#link3">Link3</a></li>
+        <li><a href="#link4">Link4</a></li>
+    </ul>
+
+}
+
