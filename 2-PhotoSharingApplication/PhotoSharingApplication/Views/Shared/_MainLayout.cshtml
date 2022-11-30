@@ -1,0 +1,27 @@
+﻿
+@model PhotoSharingApplication.Models.Photo
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link type="text/css" rel="stylesheet" href="~/content/PhotoSharingStyles.css" />
+
+
+</head>
+<body>
+    <div>
+        <h1 class="site-page-title">
+            Adventure Works Photo Sharing
+        </h1>
+        <div class="clear-floats" />
+        <div>
+            @RenderBody()
+        </div>
+
+
+
+    </div>
+</body>
+</html>
