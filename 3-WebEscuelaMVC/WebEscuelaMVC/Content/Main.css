@@ -1,0 +1,31 @@
+﻿body {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    width:1200px;
+}
+
+section{
+    display:flex;
+}
+nav {
+    height: 100px;
+    background-color: gray;
+}
+header{
+    width:70%;
+    height:600px;
+    background-color:lightgray;
+    padding:100px ;
+    box-sizing:border-box;
+    text-align:center;
+}
+aside {
+    width: 15%;
+    height: 600px;
+    background-color: lightsteelblue;
+}
+footer {
+    height: 55px;
+    background-color: gray;
+}

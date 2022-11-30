@@ -1,13 +1,6 @@
 ﻿
 @model WebEscuelaMVC.Models.Aula
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Create</title>
-</head>
-<body>
     <h1>Nueva Escuela</h1>
     @using (Html.BeginForm("Create", "Aula", FormMethod.Post))
     {
@@ -24,5 +17,3 @@
         <input type="submit"  action="Create" value="Crear" />
         @Html.ActionLink("Volver al Index","Index","Aula")
     }
-</body>
-</html>

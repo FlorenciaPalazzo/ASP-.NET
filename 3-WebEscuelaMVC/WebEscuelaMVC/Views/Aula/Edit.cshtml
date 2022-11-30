@@ -1,14 +1,7 @@
 ﻿
 @model WebEscuelaMVC.Models.Aula
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Edit</title>
-</head>
-<body>
     <h2>@Model.Id</h2>
     @using (Html.BeginForm("Edit", "Aula", FormMethod.Post))
     {
@@ -27,5 +20,3 @@
     <div>
         <p>@Html.ActionLink("Volver al Index","Index","Aula")</p>
     </div>
-</body>
-</html>
