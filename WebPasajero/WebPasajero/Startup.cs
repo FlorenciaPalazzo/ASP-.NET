@@ -41,8 +41,8 @@ namespace WebPasajero
                 app.UseExceptionHandler("/Home/Error");
             }
             //opcional activar inicializar tabla con EF
-            context.Database.EnsureDeleted();
-            context.Database.EnsureCreated();
+            //context.Database.EnsureDeleted();
+            //context.Database.EnsureCreated();
             app.UseStaticFiles();
 
             app.UseRouting();

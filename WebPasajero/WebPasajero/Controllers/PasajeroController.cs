@@ -37,6 +37,16 @@ namespace WebPasajero.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpGet("/pasajero/ListaPorCiudad/{ciudad}")]
+        // GET: /person/ListaPorCiudad/baas
+        public IActionResult ListaPorCiudad(string ciudad)
+        {
+            List<Pasajero> lista = (from p in _context.Pasajeros
+                                  where p.Ciudad == ciudad
+                                  select p).ToList();
+            return View("Index", lista);
+        }
+
         //GET
         //FILTRADO EXCLUSIVO PARA FECHAS!!!!!
         [HttpGet("/pasajero/ListarPorFechaNacimiento/{fechaNacimiento}")]
