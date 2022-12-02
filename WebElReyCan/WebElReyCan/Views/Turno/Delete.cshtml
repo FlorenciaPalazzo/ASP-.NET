@@ -1,0 +1,23 @@
+﻿@model WebElReyCan.Models.Turno
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Borrar Turno</h2>
+
+p>Desea eliminar está opera?</p>
+
+@using (Html.BeginForm("Delete", "Turno", FormMethod.Post))
+{
+    <div>
+        <span>@Html.DisplayNameFor(model => model.Fecha)</span>
+        <span>@Html.DisplayFor(model => model.Nombre)</span>
+        <span>@Html.DisplayNameFor(model => model.Raza)</span>
+        <span>@Html.DisplayFor(model => model.NombreDuenio)</span>
+    </div>
+    <input type="submit" value="Delete" />
+}
+
+<p>
+    @Html.ActionLink("Volver a la lista", "Index", "Turno")
+</p>

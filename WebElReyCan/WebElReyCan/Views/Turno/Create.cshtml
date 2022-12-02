@@ -1,0 +1,47 @@
+﻿@model WebElReyCan.Models.Turno
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Crear Turno</h2>
+
+
+<hr />
+@using (Html.BeginForm("Create", "Turno", FormMethod.Post))
+{
+    <p>
+        @Html.LabelFor(model => model.Fecha)
+        @Html.EditorFor(modelo => modelo.Fecha)
+        @Html.ValidationMessageFor(model => model.Fecha)
+    </p>
+
+    <p>
+        @Html.LabelFor(model => model.Nombre)
+        @Html.EditorFor(modelo => modelo.Nombre)
+        @Html.ValidationMessageFor(model => model.Nombre)
+    </p>
+
+    <p>
+        @Html.LabelFor(model => model.Raza)
+        @Html.EditorFor(modelo => modelo.Raza)
+        @Html.ValidationMessageFor(model => model.Raza)
+    </p>
+    <p>
+        @Html.LabelFor(model => model.Edad)
+        @Html.EditorFor(modelo => modelo.Edad)
+        @Html.ValidationMessageFor(model => model.Edad)
+    </p>
+    <p>
+        @Html.LabelFor(model => model.NombreDuenio)
+        @Html.EditorFor(modelo => modelo.NombreDuenio)
+        @Html.ValidationMessageFor(model => model.NombreDuenio)
+    </p>
+    <p>
+        @Html.LabelFor(model => model.Celular)
+        @Html.EditorFor(modelo => modelo.Celular)
+        @Html.ValidationMessageFor(modelo=> modelo.Celular)
+    </p>
+    <input type="submit" action="Create" />
+
+    @Html.ActionLink("Volver a la lista", "Index", "Turno")
+}
