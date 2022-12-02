@@ -1,0 +1,42 @@
+﻿
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.container{
+    background-color: black;
+    display:flex;
+}
+
+.caja1{
+    width: 20%;
+    background-color:aqua;
+    height:750px;
+}
+.caja2 {
+    width: 80%;
+    background-color: gray;
+    height: 750px;
+    display:flex;
+    flex-direction:column;
+}
+header{
+    width:100%;
+    background-color:antiquewhite;
+    height:150px;
+}
+.caja3 {
+    width: 100%;   
+    display:flex;
+}
+.caja4{
+    background-color:floralwhite;
+    width:80%;
+    height:600px;
+}
+.caja5 {
+    background-color: red;
+    width: 20%;
+}

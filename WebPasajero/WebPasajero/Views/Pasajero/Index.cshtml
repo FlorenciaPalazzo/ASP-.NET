@@ -1,0 +1,54 @@
+﻿@model IEnumerable<WebPasajero.Models.Pasajero>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<p>
+    @Html.ActionLink("Nuevo Pasajero","Create","Pasajero")
+</p>
+
+<h2>Index</h2>
+<table>
+<thead>
+    <tr>
+            <th>
+                @Html.DisplayNameFor(m=>m.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(m=>m.Apellido)
+            </th>
+            <th>
+                @Html.DisplayNameFor(m=>m.FechaNacimiento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(m=>m.Ciudad)
+            </th>
+
+    </tr>
+</thead>
+<tbody>
+    @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(m=>item.Nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(m=>item.Apellido)
+                </td>
+                <td>
+                    @Html.DisplayFor(m=>item.FechaNacimiento)
+                </td>
+                <td>
+                    @Html.DisplayFor(m=>item.Ciudad)
+                </td>
+                <td>
+                    <a asp-action="Create" asp-controller="Pasajero">Nuevo Pasajero</a>
+                </td>
+            </tr>
+            
+        }
+</tbody>
+
+</table>
+
