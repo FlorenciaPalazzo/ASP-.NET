@@ -70,12 +70,22 @@ namespace MVCPubs.Controllers
             return View(store);
 
         }
-        [HttpGet("/stores/{city?}/{state?}")]
+        [HttpGet("/stores/{state}/{city}")]
         public IActionResult FiltrarPorCiudad(string city, string state)
         {
             List<Stores> stores = (from p in _context.Stores where p.City == city && p.State == state select p).ToList();
             return View("Index", stores);
         }
 
+     
+
+        [HttpGet("/stores/Details/{id}")]
+        //GET:
+        public IActionResult Details(string id)
+        {
+            Stores store = _context.Stores.Find(id);
+
+            return View("Details",store);
+        }
     }
 }
