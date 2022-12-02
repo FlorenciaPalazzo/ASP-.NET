@@ -47,7 +47,7 @@ main{
     height:400px;
 }
 article {
-   
+   width:500px;
     background-color: chocolate;
     padding: 20px;
     box-sizing: border-box;
