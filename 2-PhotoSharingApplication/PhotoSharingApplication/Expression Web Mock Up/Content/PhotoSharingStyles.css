@@ -1,10 +1,11 @@
-﻿﻿body {
+﻿body {
     background: #7f9aae;
     background-image: url('BackgroundGradient.jpg');
     background-repeat: repeat-x;
     font-family: segoe ui, verdana, arial, sans-serif;
     font-weight: 300;
     color: #FBFBFB;
+    
 }
 
 .site-page-title {
@@ -15,7 +16,7 @@
 .login-controls {
     float: right;
     width: 200px;
-    background-color: #608dae;
+    background-color:#608dae;
     height: 25px;
     line-height: 2em;
     border-radius: 10px;
@@ -77,7 +78,7 @@
 }
 
 .pic-upload-input {
-    width: 400px;
+    width: 400px;    
 }
 
 .photo-index-card {
@@ -95,8 +96,8 @@
 }
 
 .photo-index-card-img {
-    width: 250px;
-    max-height: 320px;
+	width: 250px;
+	max-height: 320px;
 }
 
 .photo-metadata {
@@ -127,7 +128,7 @@
     border-width: 2px;
     border-style: solid;
     border-radius: 10px;
-    padding: 15px;
+    padding: 15px;    
     margin: 5px;
 }
 
@@ -137,8 +138,8 @@
     border-width: 2px;
     border-style: solid;
     border-radius: 10px;
-    padding: 15px;
-    margin: 5px;
+    padding: 15px;    
+    margin: 5px;   
 }
 
 .photo-comment-body {
@@ -150,31 +151,31 @@
 }
 
 #slide-show {
-    position: relative;
+    position:relative;
     height: 650px;
 }
 
-    #slide-show DIV.slide-show-card {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 8;
-        height: 600px;
-        background-color: #eeeeee;
-        border-color: #538345;
-        border-width: 2px;
-        border-style: solid;
-        border-radius: 10px;
-        padding: 15px;
-        margin: 5px;
-        height: 650px;
-        width: 800px;
-    }
+#slide-show DIV.slide-show-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    height: 600px;
+    background-color: #eeeeee;
+    border-color: #538345;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5px;
+    height: 650px;
+    width: 800px;
+}
 
-    #slide-show DIV.active-card {
-        z-index: 10;
-    }
+#slide-show DIV.active-card {
+    z-index: 10;
+}
 
-    #slide-show DIV.last-active-card {
-        z-index: 9;
-    }
+#slide-show DIV.last-active-card {
+    z-index: 9;
+}

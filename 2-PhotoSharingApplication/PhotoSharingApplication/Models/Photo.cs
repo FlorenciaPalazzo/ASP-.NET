@@ -10,7 +10,7 @@ namespace PhotoSharingApplication.Models
 {
     public class Photo
     {
-		[Key]
+	
 		public int PhotoID { get; set; }
 
 		[Required]

@@ -97,6 +97,16 @@
   <ItemGroup>
     <Content Include="Content\BackgroundGradient.jpg" />
     <Content Include="Content\PhotoSharingStyles.css" />
+    <Content Include="Expression Web Mock Up\allphotos.html" />
+    <Content Include="Expression Web Mock Up\Content\BackgroundGradient.jpg" />
+    <Content Include="Expression Web Mock Up\Content\blackberries.JPG" />
+    <Content Include="Expression Web Mock Up\Content\coastalview.jpg" />
+    <Content Include="Expression Web Mock Up\Content\headland.jpg" />
+    <Content Include="Expression Web Mock Up\Content\PhotoSharingStyles.css" />
+    <Content Include="Expression Web Mock Up\Content\pontoon.JPG" />
+    <Content Include="Expression Web Mock Up\Content\track.JPG" />
+    <Content Include="Expression Web Mock Up\default.html" />
+    <Content Include="Expression Web Mock Up\Photo.html" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
