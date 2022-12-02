@@ -3,19 +3,20 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Bienvenidos al sistema de turnos de peluqueria canina</h2>
-<p>
-    @Html.ActionLink("Ir a Turnos", "Index", "Turno")
-</p>
 
-@section SideBar{
-    <p>Otro menú</p>
-    <ul>
-        <li><a href="/home/About">About</a></li>
-        <li>@Html.ActionLink("Ir a About", "About", "Home")</li>
-        <li><a href="#Link1">Link1</a></li>
-        <li><a href="#Link2">Link2</a></li>
-        <li><a href="#Link3">Link3</a></li>
-        <li><a href="#Link4">Link4</a></li>
-    </ul>
+<h2>Index</h2>
+<div>
+    <h3>@ViewBag.Fecha</h3>
+    <h1>Bienvenidos El Rey Can</h1>
+    @Html.ActionLink("Ir al listado de Turnos", "Index", "Turno")
+
+</div>
+@section Aside{
+    <p>
+        Siguiendo con la higiene, es muy importante cepillar
+        periódicamente a los perros para eliminar todo el pelo muerto,
+        así como la descamación de la piel y la suciedad, elementos que
+        pueden provocar la irritación de la piel, así como el desequilibrio
+        de la flora bacteriana y su consiguiente colonización por bacterias
+    </p>
 }

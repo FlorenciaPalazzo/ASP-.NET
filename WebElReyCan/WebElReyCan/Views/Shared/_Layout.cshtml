@@ -17,15 +17,16 @@
     <nav> </nav>
     <main >
         <aside>
-            @if (IsSectionDefined("SideBar"))
+            @if (IsSectionDefined("Aside"))
             {
-                @RenderSection("SideBar")
+                @RenderSection("Aside")
             }
             else
             {
-                <h2>Zona Sidebar</h2>
-            }
-        </aside>
+                <a href="https://es.wikipedia.org/wiki/Peluquero_canino"> Canino</a>
+                
+                }
+            </aside>
         <article>
             @RenderBody()
         </article>
