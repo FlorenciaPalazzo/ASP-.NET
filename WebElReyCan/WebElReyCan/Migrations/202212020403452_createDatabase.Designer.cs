@@ -13,7 +13,7 @@ namespace WebElReyCan.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202212020231050_createDatabase"; }
+            get { return "202212020403452_createDatabase"; }
         }
         
         string IMigrationMetadata.Source

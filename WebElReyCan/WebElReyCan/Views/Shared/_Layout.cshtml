@@ -4,10 +4,33 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
+    <link href="~/Content/Site.css" rel="stylesheet" />
 </head>
 <body>
-    <div>
-        @RenderBody()
-    </div>
+    <header>
+        <div class="cajaNav1">Banner</div>
+        <div class="cajaNav2">
+            <div class="cajaLogo">Logo</div>
+            <div class="cajaLogin">Login</div>
+        </div>
+    </header>
+    <nav> </nav>
+    <main >
+        <aside>
+            @if (IsSectionDefined("SideBar"))
+            {
+                @RenderSection("SideBar")
+            }
+            else
+            {
+                <h2>Zona Sidebar</h2>
+            }
+        </aside>
+        <article>
+            @RenderBody()
+        </article>
+    </main>
+    <footer></footer>
+   
 </body>
 </html>

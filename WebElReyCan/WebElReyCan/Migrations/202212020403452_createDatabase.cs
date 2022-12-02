@@ -15,7 +15,7 @@
                         Fecha = c.DateTime(nullable: false),
                         Nombre = c.String(nullable: false),
                         Raza = c.String(),
-                        Edad = c.String(),
+                        Edad = c.Int(nullable: false),
                         NombreDuenio = c.String(nullable: false),
                         Celular = c.String(nullable: false),
                     })

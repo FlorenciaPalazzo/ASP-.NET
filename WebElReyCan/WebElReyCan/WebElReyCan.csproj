@@ -107,9 +107,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202212020231050_createDatabase.cs" />
-    <Compile Include="Migrations\202212020231050_createDatabase.designer.cs">
-      <DependentUpon>202212020231050_createDatabase.cs</DependentUpon>
+    <Compile Include="Migrations\202212020403452_createDatabase.cs" />
+    <Compile Include="Migrations\202212020403452_createDatabase.designer.cs">
+      <DependentUpon>202212020403452_createDatabase.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Turno.cs" />
@@ -146,8 +146,8 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202212020231050_createDatabase.resx">
-      <DependentUpon>202212020231050_createDatabase.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202212020403452_createDatabase.resx">
+      <DependentUpon>202212020403452_createDatabase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

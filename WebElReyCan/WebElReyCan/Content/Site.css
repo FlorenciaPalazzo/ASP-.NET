@@ -1,18 +1,64 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+ 
+   
 }
-
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+body{
+    width:750px;
 }
-
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+header{
+    background-color:gray;
+    height:250px;
+    display:flex;
 }
-
+.cajaNav1{
+    width:500px;
+    height:250px;
+    background-color:lightslategray;
+    display:flex;
+    flex-direction:column;
+}
+.cajaNav2{
+    width:250px;
+    height: 250px;
+    background-color: lightslategray;
+    display: flex;
+    flex-direction: column;
+}
+.cajaLogo{
+    width:100%;
+    height:125px;
+    background-color:springgreen;
+}
+.cajaLogin {
+    width: 100%;
+    height: 125px;
+    background-color: lightgray;
+}
+nav{
+    height:50px;
+    background-color:aquamarine;
+}
+main{
+    display:flex;
+    background-color:cadetblue;
+    height:400px;
+}
+article {
+   
+    background-color: chocolate;
+    padding: 20px;
+    box-sizing: border-box;
+}
+aside{
+    width:250px;
+    background-color:darkkhaki;
+    padding:50px;
+    box-sizing:border-box;
+}
+footer{
+    height:50px;
+    background-color:darkseagreen;
+}

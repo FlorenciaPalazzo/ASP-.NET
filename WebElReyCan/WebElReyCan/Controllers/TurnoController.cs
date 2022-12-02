@@ -43,7 +43,7 @@ namespace WebElReyCan.Controllers
             }
             else
             {
-                return View("Crear", turno);
+                return View("Create", turno);
             }
 
         }
